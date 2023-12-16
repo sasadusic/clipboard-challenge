@@ -1,0 +1,285 @@
+.attribution { 
+    font-size: 11px;
+     text-align: center; 
+    padding-top: 24px;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    color: var(--Dark-Grayish-Blue);
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+:root{
+    /* Primary */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Strong-Cyan-2: hsl(171, 68%, 38%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Light-Blue-2: hsl(233, 47%, 51%);
+
+    /* Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Grayish-Blue-02: hsla(201, 11%, 66%, .2);
+}
+p{
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+}
+.heading{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.sub-header{
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.label{
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+header, section{
+    /* min-height: 100vh; */
+    padding: 60px min(120px, 10vw);
+}
+.footer{
+    padding: 24px min(120px, 10vw); 
+}
+.footer .phar{
+    text-align: left;
+}
+.download{
+    min-height: calc(100vh - 150px);
+}
+.footer{
+    min-height: 150px;
+    background: var(--Grayish-Blue-02);
+    text-align: left;
+}
+.header{
+    background-image: url(images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.logo{
+    display: block;
+    margin: 32px auto;
+}
+.phar{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.btn{
+    padding: 12px 24px;
+    border: none;
+    outline-color: transparent;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    margin: 0 8px;
+}
+.green{
+    background: var(--Strong-Cyan);
+    border-bottom: 4px solid var(--Strong-Cyan-2);
+}
+.blue{
+    background: var(--Light-Blue);
+    border-bottom: 4px solid var(--Light-Blue-2);
+}
+.mb-big{
+    margin-bottom: 40px;
+}
+.about{
+    padding: 60px 0;
+}
+.about-flex{
+    display: flex;
+    gap: 0;
+    margin-top: 40px;
+}
+.left{
+    /* position: relative; */
+    width: 55%;
+    /* background-image: url(images/image-computer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0; */
+}
+.left img{
+    position: relative;
+    left: -5vw;
+}
+.right{
+    position: relative;
+    width: 45%;
+    padding: 40px 120px 40px 40px;
+    text-align: left !important;
+}
+.right .label, .right .phar{
+    text-align: left;
+}
+.acces img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.flex{
+    display: flex;
+}
+.icon-flex{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.item-image{
+    display: block;
+    margin: 32px auto;
+}
+.company-image{
+    
+    margin-top: 10vw;
+}
+.download .btn{
+    margin-top: 40px;
+}
+.footer-logo{
+    width: 60px;
+    height: 60px;
+}
+.footer-items{
+    position: relative;
+    left: -8vw;
+}
+.footer-icon{
+    margin-left: 18px;
+}
+.footer-i{
+    margin-right: 3vw;
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (width < 1200px) {
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (width < 992px) {
+    .heading{
+        font-size: 28px;
+    }
+    .about{
+        padding: 60px 32px;
+    }
+    .about .phar{
+        margin-bottom: 80px;
+    }
+    .right .label, .right .phar{
+        text-align: center;
+    }
+    .about-flex{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .left img{
+        left: 0;
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .right{
+        width: 100%;
+        text-align: center;
+        padding: 40px 24px 40px 24px;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .phar{
+        text-align: center;
+    }
+    .footer-items{
+        left: 0;
+    }
+    .footer-icon{
+        margin-left: 0 18px;
+    }
+    .footer-i{
+        margin:0;
+    }
+    .fphar{
+        margin:  0 0 18px 0 ;
+    }
+    .company-image{
+        width: 200px;
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (width < 768px) {
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (width < 576px) {
+    .btn{
+        width: 100%;
+    }
+    .header .btn{
+        margin-bottom: 18px;
+    }
+}
